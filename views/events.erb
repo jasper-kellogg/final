@@ -1,0 +1,8 @@
+<h3>Welcome to InstaHelp.</h3> <br>
+<p>You want to help? Choose from the available tasks below. 
+<br><br>You need help? Click <a href="/events/new">here</a> to log your help request. <br>
+<p>
+<h4>Help needed: </h4>
+<% for event in @events %>
+    <p><a href="/events/<%= event[:id] %>"><%= event[:title] %></a></p>
+<% end %>
